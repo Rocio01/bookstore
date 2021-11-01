@@ -1,4 +1,5 @@
 import React from 'react';
+import Book from './Book';
 
 const BooksContainer = () => {
   const books = [
@@ -29,7 +30,21 @@ const BooksContainer = () => {
 
   ];
   return (
-    <div />
+    <div className="books-container">
+
+      { books.map((book) => (
+        <div className="book" key={book.id}>
+          <Book
+            category={book.category}
+            title={book.title}
+            author={book.author}
+            chapter={book.chapter}
+            completed={book.completed}
+          />
+        </div>
+      ))}
+
+    </div>
   );
 };
 
