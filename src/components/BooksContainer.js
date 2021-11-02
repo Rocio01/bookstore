@@ -6,8 +6,8 @@ import FormBook from './FormBook';
 import 'react-circular-progressbar/dist/styles.css';
 
 const BooksContainer = () => {
-  const state = useSelector((state) => state);
-  console.log(state);
+  const bookState = useSelector((state) => state.book);
+  console.log(bookState);
   const books = [
     {
       id: uuidv4(),
