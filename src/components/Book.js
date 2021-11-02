@@ -7,8 +7,8 @@ const Book = (props) => {
   } = props;
   return (
 
-    <>
-      <div className="Book-info">
+    <div className="row">
+      <div className="Book-info col">
         <ul>
           <li className="category">
             {category}
@@ -28,31 +28,30 @@ const Book = (props) => {
           </li>
         </ul>
       </div>
-      <div className="progress">
-        <h4>
-          {' '}
-          {completed}
-          {' '}
-          % Completed
-        </h4>
+      <div className="progress-book col">
+        <ul>
+          <li className="p-1">
+            {completed}
+            % Completed
+          </li>
+        </ul>
 
       </div>
-      <div>
+      <div className="col">
         <ul>
           <li>
             CURRENT CHAPTER
           </li>
           <li>
             Chapter
-            {' '}
             {chapter}
           </li>
-          <li>
+          <li className="py-2">
             <button type="button" value={id}>UPDATE PROGRESS</button>
           </li>
         </ul>
       </div>
-    </>
+    </div>
   );
 };
 

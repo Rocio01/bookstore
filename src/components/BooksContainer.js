@@ -40,6 +40,7 @@ const BooksContainer = () => {
             author={book.author}
             chapter={book.chapter}
             completed={book.completed}
+            id={book.id}
           />
         </div>
       ))}
