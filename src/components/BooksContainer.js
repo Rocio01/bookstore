@@ -1,6 +1,7 @@
 import React from 'react';
 import Book from './Book';
 import FormBook from './FormBook';
+import 'react-circular-progressbar/dist/styles.css';
 
 const BooksContainer = () => {
   const books = [

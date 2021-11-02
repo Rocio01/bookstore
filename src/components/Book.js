@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { CircularProgressbar } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 
 const Book = (props) => {
   const {
@@ -29,10 +31,17 @@ const Book = (props) => {
         </ul>
       </div>
       <div className="progress-book col">
-        <ul>
-          <li className="p-1">
-            {completed}
-            % Completed
+        <ul className="row">
+          <li className="col">
+            <CircularProgressbar value={completed} styles={{ root: { width: '100px', height: '100px' } }} />
+
+          </li>
+          <li className="col">
+            <h2>
+              {completed}
+              %
+            </h2>
+            <p>Completed</p>
           </li>
         </ul>
 
