@@ -1,5 +1,6 @@
 import React from 'react';
 import Book from './Book';
+import FormBook from './FormBook';
 
 const BooksContainer = () => {
   const books = [
@@ -45,6 +46,7 @@ const BooksContainer = () => {
         </div>
       ))}
 
+      <FormBook />
     </div>
   );
 };
