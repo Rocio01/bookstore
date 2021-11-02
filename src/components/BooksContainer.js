@@ -1,4 +1,5 @@
 import React from 'react';
+import { v4 as uuidv4 } from 'uuid';
 import Book from './Book';
 import FormBook from './FormBook';
 import 'react-circular-progressbar/dist/styles.css';
@@ -6,7 +7,7 @@ import 'react-circular-progressbar/dist/styles.css';
 const BooksContainer = () => {
   const books = [
     {
-      id: 1,
+      id: uuidv4(),
       category: 'Fantasy',
       title: 'Harry Potter and the Sorcerer’s Stone',
       author: 'J.K. Rowling',
@@ -14,7 +15,7 @@ const BooksContainer = () => {
       completed: 50,
     },
     {
-      id: 2,
+      id: uuidv4(),
       category: 'Fantasy',
       title: 'Harry Potter and the Chamber of Secrets',
       author: 'J.K. Rowling',
@@ -22,7 +23,7 @@ const BooksContainer = () => {
       completed: 80,
     },
     {
-      id: 3,
+      id: uuidv4(),
       category: 'Fantasy',
       title: 'Harry Potter and the Prisoner of Azkaban',
       author: 'J.K. Rowling',
