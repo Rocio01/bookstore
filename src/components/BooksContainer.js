@@ -1,10 +1,13 @@
 import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
+import { useSelector } from 'react-redux';
 import Book from './Book';
 import FormBook from './FormBook';
 import 'react-circular-progressbar/dist/styles.css';
 
 const BooksContainer = () => {
+  const state = useSelector((state) => state);
+  console.log(state);
   const books = [
     {
       id: uuidv4(),
