@@ -13,6 +13,7 @@ const Book = (props) => {
   const dispatch = useDispatch();
 
   const removeTheBook = () => {
+    console.log('ww');
     dispatch(removeBook(id));
   };
 
