@@ -12,8 +12,7 @@ const Book = (props) => {
 
   const dispatch = useDispatch();
 
-  const removeTheBook = () => {
-    console.log('ww');
+  const removeBookFromStore = () => {
     dispatch(removeBook(id));
   };
 
@@ -34,7 +33,7 @@ const Book = (props) => {
           <li>
             <button type="button" value={id}>Comments</button>
             {' | '}
-            <button type="button" onClick={removeTheBook}>Remove</button>
+            <button type="button" onClick={removeBookFromStore}>Remove</button>
             {' | '}
             <button type="button" value={id}>Edit</button>
           </li>
