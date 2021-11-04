@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const SET_BOOKS = 'bookStore/books/SET_BOOKS';
-const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
+// const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
 const URL = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/';
 const BOOK_STORE_ID = 'om3QgaPKeSFviyizCbfq';
 const initialState = {
@@ -34,18 +34,6 @@ const setBooks = (payload) => ({
   payload,
 });
 
-// export const fetchBooks = (dispatch) => {
-//   fetch('https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/om3QgaPKeSFviyizCbfq/books')
-//     .then((res) => {
-//       console.log(res);
-//       // res.json();
-//     })
-//     .then((response) => {
-//       dispatch(setBooks(response));
-//       console.log(response);
-//     });
-// };
-
 export const fetchBooks = (dispatch) => {
   axios.get('https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/om3QgaPKeSFviyizCbfq/books')
     .then((res) => {
@@ -53,9 +41,18 @@ export const fetchBooks = (dispatch) => {
     });
 };
 
-export const removeBook = (id) => ({
-  type: REMOVE_BOOK,
-  id,
-});
+// export const removeBook = (payload) => ({
+//   type: REMOVE_BOOK,
+//   id,
+// });
 
+export const removeBook = (payload) => () => {
+  console.log(payload);
+  fetch(`https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/om3QgaPKeSFviyizCbfq/books/${payload}`, {
+    method: 'DELETE',
+    headers: {
+      'Content-type': 'application/json',
+    },
+  });
+};
 export default bookReducer;
