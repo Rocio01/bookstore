@@ -22,7 +22,6 @@ const FormBook = () => {
     };
 
     dispatch(addBook(newBook));
-    console.log(newBook);
   };
 
   return (
