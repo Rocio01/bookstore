@@ -13,8 +13,8 @@ const BooksContainer = () => {
   }, []);
 
   const bookStore = useSelector((store) => store.bookReducer);
-  // console.log(Object.values(Object.values(bookStore)[0]));
-  console.log(Object.values(Object.values(bookStore)[0]));
+  const bookObject = Object.values(Object.values(bookStore)[0]);
+  console.log((Object.values(bookObject).payload));
   return (
     <div className="books-container">
 
