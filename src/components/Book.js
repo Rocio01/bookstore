@@ -8,7 +8,7 @@ import 'react-circular-progressbar/dist/styles.css';
 
 const Book = (props) => {
   const {
-    category, title, author, chapter, completed, item_id,
+    category, title, chapter, completed, item_id,
   } = props;
 
   const dispatch = useDispatch();
@@ -29,7 +29,7 @@ const Book = (props) => {
             {title}
           </li>
           <li className="author">
-            {author}
+            {' '}
           </li>
           <li>
             <button type="button" value={item_id}>Comments</button>
@@ -78,7 +78,6 @@ Book.propTypes = {
   item_id: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  author: PropTypes.string.isRequired,
   chapter: PropTypes.number.isRequired,
   completed: PropTypes.number.isRequired,
 };

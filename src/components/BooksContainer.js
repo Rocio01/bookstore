@@ -23,7 +23,6 @@ const BooksContainer = () => {
           <Book
             category={value[0].category}
             title={value[0].title}
-            author="author"
             chapter={2}
             completed={70}
             item_id={key}
