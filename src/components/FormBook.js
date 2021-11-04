@@ -14,14 +14,15 @@ const FormBook = () => {
     const bookAuthor = document.querySelector('#author').value;
 
     const newBook = {
-      category: bookCategory,
+      item_id: uuidv4(),
       title: bookTitle,
+      category: bookCategory,
       author: bookAuthor,
-      id: uuidv4(), // make sure it's unique
 
     };
 
     dispatch(addBook(newBook));
+    console.log(newBook);
   };
 
   return (
