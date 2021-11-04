@@ -1,10 +1,17 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import Book from './Book';
 import FormBook from './FormBook';
 import 'react-circular-progressbar/dist/styles.css';
+import { fetchBooks } from '../redux/books/books';
 
 const BooksContainer = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    fetchBooks(dispatch);
+  }, []);
+
   const bookStore = useSelector((store) => store.book);
   return (
     <div className="books-container">
