@@ -16,16 +16,6 @@ const bookReducer = (state = initialState, action) => {
   }
 };
 
-export const addBook = (payload) => () => {
-  fetch(`${URL}${BOOK_STORE_ID}/books`, {
-    method: 'POST',
-    headers: {
-      'Content-type': 'application/json',
-    },
-    body: JSON.stringify(payload),
-  });
-};
-
 const setBooks = (payload) => ({
   type: SET_BOOKS,
   payload,
@@ -38,12 +28,24 @@ export const fetchBooks = (dispatch) => {
     });
 };
 
-export const removeBook = (payload) => () => {
+export const addBook = (payload) => (dispatch) => {
+  fetch(`${URL}${BOOK_STORE_ID}/books`, {
+    method: 'POST',
+    headers: {
+      'Content-type': 'application/json',
+    },
+    body: JSON.stringify(payload),
+  })
+    .then(() => fetchBooks(dispatch));
+};
+
+export const removeBook = (payload) => (dispatch) => {
   fetch(`${URL}${BOOK_STORE_ID}/books/${payload}`, {
     method: 'DELETE',
     headers: {
       'Content-type': 'application/json',
     },
-  });
+  })
+    .then(() => fetchBooks(dispatch));
 };
 export default bookReducer;
