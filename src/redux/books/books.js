@@ -48,7 +48,9 @@ const setBooks = (payload) => ({
 
 export const fetchBooks = (dispatch) => {
   axios.get('https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/om3QgaPKeSFviyizCbfq/books')
-    .then((res) => dispatch(setBooks(res.data)));
+    .then((res) => {
+      dispatch(setBooks(res.data));
+    });
 };
 
 export const removeBook = (id) => ({

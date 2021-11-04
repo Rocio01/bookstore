@@ -12,21 +12,20 @@ const BooksContainer = () => {
     fetchBooks(dispatch);
   }, []);
 
-  const bookStore = useSelector((store) => store.bookReducer);
-  const bookObject = Object.values(Object.values(bookStore)[0]);
-  console.log((Object.values(bookObject).payload));
+  const bookStore = useSelector((store) => store.bookReducer.books);
+  console.log(bookStore);
   return (
     <div className="books-container">
 
-      {Object.values(Object.values(bookStore)[0]).map((book) => (
+      {(Object.values(bookStore)).map((book) => (
         <div className="book" key={book.id}>
           <Book
-            category={book.category}
-            title={book.title}
-            author={book.author}
+            category={book[0].category}
+            title={book[0].title}
+            // author={book[0].author}
             chapter={2}
             completed={70}
-            id={book.id}
+            // item_id={}
           />
         </div>
       ))}
