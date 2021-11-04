@@ -30,11 +30,12 @@ const setBooks = (payload) => ({
   payload,
 });
 
-export const fetchBooks = async (dispatch) => {
-  const books = await fetch(`${URL}${BOOK_STORE_ID}/books`);
-  console.log(books, 'hello');
-
-  dispatch(setBooks(books));
+export const fetchBooks = (dispatch) => {
+  fetch('https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/om3QgaPKeSFviyizCbfq/books')
+    .then((res) => res.json())
+    .then((response) => {
+      dispatch(setBooks(response));
+    });
 };
 
 export const removeBook = (id) => ({
