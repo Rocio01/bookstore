@@ -11,7 +11,7 @@ li {
   height: 1.125rem;
   margin: 0 2.438rem 0 0;
   opacity: 0.5;
-  font-family: Montserrat !important;
+  font-family: Montserrat, "Times New Roman", Times, serif !important;
   font-size: 0.875rem;
   font-weight: bold;
   font-stretch: normal;
@@ -25,7 +25,7 @@ li {
   width: 12.313rem;
   height: 1.813rem;
   margin: 0.188rem 20.188rem 0 0;
-  font-family: RobotoSlab !important;
+  font-family: RobotoSlab, "Times New Roman", Times, serif !important;
   font-size: 1.375rem;
   font-weight: bold;
   font-stretch: normal;
@@ -40,8 +40,7 @@ li {
 .edit {
   width: 4.563rem;
   height: 1.188rem;
-  margin: 0.188rem 0.938rem 0.125rem 0;
-  font-family: RobotoSlab !important;
+  font-family: RobotoSlab, "Times New Roman", Times, serif !important;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
@@ -51,7 +50,6 @@ li {
   color: #4386bf;
   background: none;
   border: none;
-  padding: 0;
   cursor: pointer;
   outline: inherit;
   padding: 0% !important;
@@ -68,7 +66,7 @@ li {
   width: 4.25rem;
   height: 2.438rem;
   margin: 0.063rem 5.75rem 0 0.688rem;
-  font-family: Montserrat;
+  font-family: Montserrat, "Times New Roman", Times, serif !important;
   font-size: 2rem;
   font-weight: normal;
   font-stretch: normal;
@@ -77,12 +75,13 @@ li {
   letter-spacing: normal;
   color: #121212;
 }
+
 .completed {
   width: 5rem;
   height: 1.125rem;
   margin: 0.438rem 4.938rem 0.75rem 0.75rem;
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: Montserrat, "Times New Roman", Times, serif !important;
   font-size: 0.875rem;
   font-weight: normal;
   font-stretch: normal;
@@ -97,7 +96,7 @@ li {
   height: 1.125rem;
   margin: 0.063rem 3.625rem 0 3.688rem;
   opacity: 0.5;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, "Times New Roman", Times, serif !important;
   font-size: 0.813rem;
   font-weight: 300;
   font-stretch: normal;
@@ -111,7 +110,7 @@ li {
   width: 4.688rem;
   height: 1.313rem;
   margin: 0.438rem 6.813rem 0.25rem 3.688rem;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, "Times New Roman", Times, serif !important;
   font-size: 1rem;
   font-weight: 300;
   font-stretch: normal;
@@ -128,7 +127,7 @@ li {
   padding: 0.438rem 1.188rem 0.5rem 1.375rem;
   border-radius: 3px;
   background-color: #0290ff;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, "Times New Roman", Times, serif !important;
   font-size: 0.813rem;
   font-weight: 300;
   font-stretch: normal;
@@ -153,7 +152,7 @@ li {
   width: 15rem;
   height: 2.313rem;
   margin: 0.375rem 2.938rem 0.125rem 0;
-  font-family: Montserrat;
+  font-family: Montserrat, "Times New Roman", Times, serif !important;
   font-size: 1.875rem;
   font-weight: bold;
   font-stretch: normal;
@@ -162,15 +161,17 @@ li {
   letter-spacing: normal;
   color: #0290ff;
 }
+
 .nav {
   padding-left: 6% !important;
   background-color: #fff;
 }
+
 .nav-categories {
   width: 3.688rem;
   height: 1rem;
   margin: 1.125rem 2.563rem 0.688rem 0;
-  font-family: Montserrat;
+  font-family: Montserrat, "Times New Roman", Times, serif !important;
   font-size: 0.813rem;
   font-weight: normal;
   font-stretch: normal;
@@ -188,11 +189,12 @@ a {
 .active-link {
   color: #4386bf !important;
 }
+
 .add-form {
   width: 10.875rem;
   height: 1.5rem;
   margin: 1.813rem 32.75rem 1.188rem 0;
-  font-family: Montserrat;
+  font-family: Montserrat, "Times New Roman", Times, serif !important;
   font-size: 1.25rem;
   font-weight: bold;
   font-stretch: normal;
@@ -213,7 +215,7 @@ a {
   height: 2.813rem;
   border-radius: 3px;
   background-color: #0290ff;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, "Times New Roman", Times, serif !important;
   font-size: 0.813rem;
   font-weight: bold;
   font-stretch: normal;
@@ -229,7 +231,7 @@ a {
   border-radius: 4px;
   border: solid 1px #e8e8e8;
   background-color: #fff;
-  font-family: Montserrat;
+  font-family: Montserrat, "Times New Roman", Times, serif !important;
   font-size: 1rem;
   font-weight: normal;
   font-stretch: normal;
