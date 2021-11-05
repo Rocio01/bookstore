@@ -4,16 +4,17 @@ import { CircularProgressbar } from 'react-circular-progressbar';
 import { useDispatch } from 'react-redux';
 import { removeBook } from '../redux/books/books';
 import 'react-circular-progressbar/dist/styles.css';
+/* eslint-disable camelcase */
 
 const Book = (props) => {
   const {
-    category, title, author, chapter, completed, id,
+    category, title, chapter, completed, item_id,
   } = props;
 
   const dispatch = useDispatch();
 
   const removeBookFromStore = () => {
-    dispatch(removeBook(id));
+    dispatch(removeBook(item_id));
   };
 
   return (
@@ -28,14 +29,14 @@ const Book = (props) => {
             {title}
           </li>
           <li className="author">
-            {author}
+            {' '}
           </li>
           <li>
-            <button type="button" value={id}>Comments</button>
+            <button type="button" value={item_id}>Comments</button>
             {' | '}
             <button type="button" onClick={removeBookFromStore}>Remove</button>
             {' | '}
-            <button type="button" value={id}>Edit</button>
+            <button type="button" value={item_id}>Edit</button>
           </li>
         </ul>
       </div>
@@ -65,7 +66,7 @@ const Book = (props) => {
             {chapter}
           </li>
           <li className="py-2">
-            <button type="button" value={id}>UPDATE PROGRESS</button>
+            <button type="button" value={item_id}>UPDATE PROGRESS</button>
           </li>
         </ul>
       </div>
@@ -74,10 +75,9 @@ const Book = (props) => {
 };
 
 Book.propTypes = {
-  id: PropTypes.string.isRequired,
+  item_id: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  author: PropTypes.string.isRequired,
   chapter: PropTypes.number.isRequired,
   completed: PropTypes.number.isRequired,
 };

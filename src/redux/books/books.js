@@ -1,27 +1,51 @@
-const ADD_BOOK = 'bookStore/books/ADD_BOOK';
-const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
+import axios from 'axios';
 
-const initialState = [];
+const SET_BOOKS = 'bookStore/books/SET_BOOKS';
+const URL = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/';
+const BOOK_STORE_ID = 'om3QgaPKeSFviyizCbfq';
+const initialState = {
+  books: [],
+};
 
 const bookReducer = (state = initialState, action) => {
   switch (action.type) {
-    case ADD_BOOK:
-      return [...state, action.payload];
-    case REMOVE_BOOK:
-      return state.filter((element) => element.id !== action.id);
+    case SET_BOOKS:
+      return { ...state, books: action.payload };
     default:
       return state;
   }
 };
 
-export const addBook = (payload) => ({
-  type: ADD_BOOK,
+const setBooks = (payload) => ({
+  type: SET_BOOKS,
   payload,
 });
 
-export const removeBook = (id) => ({
-  type: REMOVE_BOOK,
-  id,
-});
+export const fetchBooks = (dispatch) => {
+  axios.get(`${URL}${BOOK_STORE_ID}/books`)
+    .then((res) => {
+      dispatch(setBooks(res.data));
+    });
+};
 
+export const addBook = (payload) => (dispatch) => {
+  fetch(`${URL}${BOOK_STORE_ID}/books`, {
+    method: 'POST',
+    headers: {
+      'Content-type': 'application/json',
+    },
+    body: JSON.stringify(payload),
+  })
+    .then(() => fetchBooks(dispatch));
+};
+
+export const removeBook = (payload) => (dispatch) => {
+  fetch(`${URL}${BOOK_STORE_ID}/books/${payload}`, {
+    method: 'DELETE',
+    headers: {
+      'Content-type': 'application/json',
+    },
+  })
+    .then(() => fetchBooks(dispatch));
+};
 export default bookReducer;
