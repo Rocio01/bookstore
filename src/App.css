@@ -6,6 +6,11 @@ li {
   list-style: none;
 }
 
+.line-2 {
+  border-right: 1px solid #dee2e6 !important;
+  padding-bottom: 2%;
+}
+
 .category {
   width: 3.063rem;
   height: 1.125rem;
@@ -142,10 +147,13 @@ li {
   width: 75rem;
   height: 10.625rem;
   margin: 2.313rem 6.25rem 0;
-  padding: 2rem 9.188rem 1.625rem 1.688rem;
+  padding: 2rem 4rem 1.625rem 1.688rem;
   border-radius: 4px;
   border: solid 1px var(--white);
   background-color: #fff;
+}
+.progress-ul {
+  padding-left: 1% !important;
 }
 
 .title-app {
@@ -183,11 +191,11 @@ li {
 
 a {
   text-decoration: none;
-  color: #121212 !important;
+  color: #181818 !important;
 }
 
 .active-link {
-  color: #4386bf !important;
+  color: #121212 !important;
 }
 
 .add-form {
@@ -226,11 +234,44 @@ a {
   color: #fff;
 }
 
-.input-form {
+.user {
+  position: absolute;
+  left: 83rem;
+  top: 166px;
+}
+
+.author {
+  width: 6.688rem;
+  height: 1.188rem;
+  margin: 0.25rem 0 0;
+  font-family: RobotoSlab;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+#root {
+  width: 100rem;
+  height: 89.625rem;
+  padding: 9.313rem 3.75rem 7.688rem 6.25rem;
+  background-color: #f5f6fa;
+}
+.App {
+  background-color: #fafafa;
+  height: 68.563rem;
+}
+
+.input-title {
+  width: 41.5rem;
   height: 2.813rem;
+  margin-right: 1rem;
+  padding: 0.813rem 35.688rem 0.813rem 1.063rem;
   border-radius: 4px;
-  border: solid 1px #e8e8e8;
-  background-color: #fff;
+  border: solid 1px var(--white);
   font-family: Montserrat, "Times New Roman", Times, serif !important;
   font-size: 1rem;
   font-weight: normal;
@@ -239,4 +280,31 @@ a {
   line-height: normal;
   letter-spacing: -0.15px;
   color: #c4c4c4;
+}
+
+.input-category {
+  width: 17.813rem;
+  height: 2.813rem;
+  margin: 0;
+  padding: 0.375rem 0.938rem 0.563rem 1rem;
+  border-radius: 4px;
+  border: solid 1px var(--white);
+  background-color: #fff;
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.15px;
+  color: #c4c4c4;
+}
+
+.div-i {
+  padding: 0;
+  margin: 0;
+}
+
+.div-button {
+  margin-left: 1rem;
 }

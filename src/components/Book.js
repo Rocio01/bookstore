@@ -20,7 +20,7 @@ const Book = (props) => {
   return (
 
     <div className="row book-individual mb-3">
-      <div className="Book-info col-4">
+      <div className="Book-info col-5">
         <ul>
           <li className="category">
             {category}
@@ -29,7 +29,7 @@ const Book = (props) => {
             {title}
           </li>
           <li className="author">
-            {' '}
+            Author
           </li>
           <li className="row">
             <button type="button" value={item_id} className="comments col-3">Comments</button>
@@ -45,12 +45,12 @@ const Book = (props) => {
         </ul>
       </div>
       <div className="progress-book col-4">
-        <ul className="row">
-          <li className="col-6">
-            <CircularProgressbar value={completed} styles={{ root: { width: '100px', height: '100px' } }} />
+        <ul className="row progress-ul">
+          <li className="col-3">
+            <CircularProgressbar className="circular" value={completed} styles={{ root: { width: '4.25rem', height: '4.25rem' } }} />
 
           </li>
-          <li className="col-6">
+          <li className="col-7 line-2">
             <h2 className="percentage">
               {completed}
               %
@@ -60,7 +60,7 @@ const Book = (props) => {
         </ul>
 
       </div>
-      <div className="col-4 chapter-info">
+      <div className="col-3 chapter-info">
         <ul>
           <li className="current-chapter">
             CURRENT CHAPTER

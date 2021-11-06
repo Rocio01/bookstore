@@ -30,27 +30,23 @@ const FormBook = () => {
         ADD NEW BOOK
       </h4>
       <form className="row  align-items-center">
-        <div className="col-5">
-          <div className="input-group book-title">
-            <input type="text" className="form-control input-form" id="title" name="title" placeholder="Book title" required />
-          </div>
-        </div>
-        <div className="col-2">
-          <div className="input-group book-author">
-            <input type="text" className="form-control input-form" id="author" name="author" placeholder="Author" required />
+        <div className="col  div-i">
+          <div className="input-group ">
+            <input type="text" className=" input-form input-title" id="title" name="title" placeholder="Book title" required />
           </div>
         </div>
 
-        <div className="col-2">
-          <select className="form-control input-form" id="category" placeholder="category">
+        <div className="col div-i">
+          <select className=" input-form input-category" id="category" placeholder="category">
             <option>Action</option>
             <option>Romance</option>
             <option>Fantasy</option>
             <option>Mistery</option>
+            <option>Fiction</option>
           </select>
         </div>
 
-        <div className="col-2">
+        <div className="col div-button">
           <button type="submit" className="btn btn-add-book" onClick={submitBookToStore}>ADD BOOK</button>
         </div>
       </form>
