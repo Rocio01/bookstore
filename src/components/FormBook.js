@@ -29,7 +29,7 @@ const FormBook = () => {
       </h4>
       <form className="row  align-items-center">
         <div className="col-6  div-i">
-          <div className="input-group div-i-title">
+          <div className="div-i-title">
             <input type="text" className=" input-form input-title" id="title" name="title" placeholder="Book title" required />
           </div>
         </div>

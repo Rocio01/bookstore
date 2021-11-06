@@ -279,8 +279,7 @@ a {
 }
 
 form {
-  width: 1440px;
-  margin-right: 1rem;
+  width: 1440px !important;
 }
 
 .App {
