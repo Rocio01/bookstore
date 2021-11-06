@@ -11,13 +11,11 @@ const FormBook = () => {
 
     const bookCategory = document.querySelector('#category').value;
     const bookTitle = document.querySelector('#title').value;
-    const bookAuthor = document.querySelector('#author').value;
 
     const newBook = {
       item_id: uuidv4(),
       title: bookTitle,
       category: bookCategory,
-      author: bookAuthor,
 
     };
 
@@ -30,14 +28,15 @@ const FormBook = () => {
         ADD NEW BOOK
       </h4>
       <form className="row  align-items-center">
-        <div className="col  div-i">
-          <div className="input-group ">
+        <div className="col-6  div-i">
+          <div className="input-group div-i-title">
             <input type="text" className=" input-form input-title" id="title" name="title" placeholder="Book title" required />
           </div>
         </div>
 
-        <div className="col div-i">
+        <div className="col-2 div-i">
           <select className=" input-form input-category" id="category" placeholder="category">
+            <option> Category</option>
             <option>Action</option>
             <option>Romance</option>
             <option>Fantasy</option>
@@ -46,7 +45,7 @@ const FormBook = () => {
           </select>
         </div>
 
-        <div className="col div-button">
+        <div className=" col-2 div-button">
           <button type="submit" className="btn btn-add-book" onClick={submitBookToStore}>ADD BOOK</button>
         </div>
       </form>
