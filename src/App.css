@@ -253,8 +253,8 @@ a {
 
 .user {
   position: absolute;
-  left: 83rem;
-  top: 166px;
+  left: 78rem;
+  top: 17px;
 }
 
 .author {
@@ -272,8 +272,8 @@ a {
 }
 
 #root {
-  width: 100rem;
-  padding: 9.313rem 3.75rem 7.688rem 6.25rem;
+  width: 87.5rem;
+  height: 68.563rem;
   background-color: #f5f6fa;
 }
 
@@ -285,6 +285,8 @@ form {
 .App {
   background-color: #fafafa;
   padding-bottom: 1rem;
+  width: 87.5rem;
+  height: 68.563rem;
 }
 
 .input-title {
