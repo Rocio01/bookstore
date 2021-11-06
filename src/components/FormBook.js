@@ -11,13 +11,11 @@ const FormBook = () => {
 
     const bookCategory = document.querySelector('#category').value;
     const bookTitle = document.querySelector('#title').value;
-    const bookAuthor = document.querySelector('#author').value;
 
     const newBook = {
       item_id: uuidv4(),
       title: bookTitle,
       category: bookCategory,
-      author: bookAuthor,
 
     };
 
@@ -26,32 +24,29 @@ const FormBook = () => {
 
   return (
     <div className="form-container">
-      <h4>
+      <h4 className="add-form-title p-2">
         ADD NEW BOOK
       </h4>
-      <form className="row gy-2 gx-3 align-items-center">
-        <div className="col-auto">
-          <div className="input-group book-title">
-            <input type="text" className="form-control" id="title" name="title" placeholder="Book title" required />
-          </div>
-        </div>
-        <div className="col-auto">
-          <div className="input-group book-author">
-            <input type="text" className="form-control" id="author" name="author" placeholder="Author" required />
+      <form className="row  align-items-center">
+        <div className="col-6  div-i">
+          <div className="div-i-title">
+            <input type="text" className=" input-form input-title" id="title" name="title" placeholder="Book title" required />
           </div>
         </div>
 
-        <div className="col-auto">
-          <select className="form-control" id="category" placeholder="category">
+        <div className="col-2 div-i">
+          <select className=" input-form input-category" id="category" placeholder="category">
+            <option> Category</option>
             <option>Action</option>
             <option>Romance</option>
             <option>Fantasy</option>
             <option>Mistery</option>
+            <option>Fiction</option>
           </select>
         </div>
 
-        <div className="col-auto">
-          <button type="submit" className="btn btn-primary" onClick={submitBookToStore}>ADD BOOK</button>
+        <div className=" col-2 div-button">
+          <button type="submit" className="btn btn-add-book" onClick={submitBookToStore}>ADD BOOK</button>
         </div>
       </form>
     </div>

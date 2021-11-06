@@ -1,7 +1,338 @@
 body {
-  padding: 2%;
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 li {
   list-style: none;
+}
+
+.line-2 {
+  border-right: 1px solid #dee2e6 !important;
+  padding-bottom: 2%;
+}
+
+.category {
+  width: 3.063rem;
+  height: 1.125rem;
+  margin: 0 2.438rem 0 0;
+  opacity: 0.5;
+  font-family: Montserrat, "Times New Roman", Times, serif !important;
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.title {
+  width: 12.313rem;
+  height: 1.813rem;
+  margin: 0.188rem 20.188rem 0 0;
+  font-family: RobotoSlab, "Times New Roman", Times, serif !important;
+  font-size: 1.375rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: #121212;
+}
+
+.comments,
+.remove,
+.edit {
+  width: 4.563rem;
+  height: 1.188rem;
+  font-family: RobotoSlab, "Times New Roman", Times, serif !important;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: inherit;
+  padding: 0% !important;
+  margin: 3% 0% !important;
+}
+
+.line1 {
+  width: 0.125rem;
+  height: 1.5rem;
+  color: #e8e8e8;
+}
+
+.percentage {
+  width: 4.25rem;
+  height: 2.438rem;
+  margin: 0.063rem 5.75rem 0 0.688rem;
+  font-family: Montserrat, "Times New Roman", Times, serif !important;
+  font-size: 2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.completed {
+  width: 5rem;
+  height: 1.125rem;
+  margin: 0.438rem 4.938rem 0.75rem 0.75rem;
+  opacity: 0.5;
+  font-family: Montserrat, "Times New Roman", Times, serif !important;
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.current-chapter {
+  width: 7.875rem;
+  height: 1.125rem;
+  margin: 0.063rem 3.625rem 0 3.688rem;
+  opacity: 0.5;
+  font-family: RobotoSlab, "Times New Roman", Times, serif !important;
+  font-size: 0.813rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.chapter {
+  width: 4.688rem;
+  height: 1.313rem;
+  margin: 0.438rem 6.813rem 0.25rem 3.688rem;
+  font-family: RobotoSlab, "Times New Roman", Times, serif !important;
+  font-size: 1rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: #121212;
+}
+
+.update-button {
+  width: 11.5rem;
+  height: 2.063rem;
+  margin: 0.75rem 0 0.563rem 3.688rem;
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  border-radius: 3px;
+  background-color: #0290ff;
+  font-family: RobotoSlab, "Times New Roman", Times, serif !important;
+  font-size: 0.813rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+}
+
+.book-individual {
+  width: 75rem;
+  height: 10.625rem;
+  margin: 2.313rem 6.25rem 0;
+  padding: 2rem 4rem 1.625rem 1.688rem;
+  border-radius: 4px;
+  border: solid 1px var(--white);
+  background-color: #fff;
+}
+
+.progress-ul {
+  padding-left: 1% !important;
+}
+
+.title-app {
+  width: 15rem;
+  height: 2.313rem;
+  margin: 0.375rem 2.938rem 0.125rem 0;
+  font-family: Montserrat, "Times New Roman", Times, serif !important;
+  font-size: 1.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0290ff;
+}
+
+.nav {
+  padding-left: 6% !important;
+  background-color: #fff;
+}
+
+.nav-categories {
+  width: 3.688rem;
+  height: 1rem;
+  margin: 1.125rem 2.563rem 0.688rem 0;
+  font-family: Montserrat, "Times New Roman", Times, serif !important;
+  font-size: 0.813rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: #121212 !important;
+}
+
+a {
+  text-decoration: none;
+  color: #181818 !important;
+}
+
+.active-link {
+  color: #121212 !important;
+}
+
+.add-form {
+  width: 10.875rem;
+  height: 1.5rem;
+  margin: 1.813rem 32.75rem 1.188rem 0;
+  font-family: Montserrat, "Times New Roman", Times, serif !important;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #888;
+}
+
+.add-form-title {
+  border-top: 1px solid #dee2e6 !important;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  height: 4rem;
+  padding-top: 1rem !important;
+  font-family: Montserrat, "Times New Roman", Times, serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #888;
+}
+
+.form-container {
+  margin-left: 6.25rem;
+  width: 75rem;
+  padding: 0;
+  margin-bottom: 0% !important;
+}
+
+.btn-add-book {
+  width: 11.5rem;
+  height: 2.813rem;
+  border-radius: 3px;
+  background-color: #0290ff;
+  font-family: RobotoSlab, "Times New Roman", Times, serif !important;
+  font-size: 0.813rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+}
+
+.user {
+  position: absolute;
+  left: 78rem;
+  top: 17px;
+}
+
+.author {
+  width: 6.688rem;
+  height: 1.188rem;
+  margin: 0.25rem 0 0;
+  font-family: RobotoSlab, "Times New Roman", Times, serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+#root {
+  width: fit-content;
+  height: 68.563rem;
+  background-color: #f5f6fa;
+}
+
+form {
+  width: 1440px !important;
+}
+
+.App {
+  background-color: #fafafa;
+  padding-bottom: 1rem;
+  width: 87.5rem;
+  height: 68.563rem;
+}
+
+.input-title {
+  width: 41.5rem;
+  height: 2.813rem;
+  padding: 0.813rem 35.688rem 0.813rem 1.063rem;
+  border-radius: 4px;
+  border: solid 1px var(--white);
+  font-family: Montserrat, "Times New Roman", Times, serif !important;
+  font-size: 1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.15px;
+  color: #c4c4c4;
+}
+
+.input-category {
+  width: 17.813rem;
+  height: 2.813rem;
+  margin: 0;
+  padding: 0.375rem 0.938rem 0.563rem 0;
+  border-radius: 4px;
+  border: solid 1px var(--white);
+  background-color: #fff;
+  font-family: Montserrat, "Times New Roman", Times, serif;
+  font-size: 1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.15px;
+  color: #c4c4c4;
+}
+
+.div-i {
+  padding: 0;
+  margin: 0;
+}
+
+.div-button {
+  margin-left: 3.5rem;
+  width: 11.5rem !important;
+}
+
+.div-i-title {
+  padding-left: 0.8rem !important;
 }

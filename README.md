@@ -8,6 +8,8 @@
 - Add a book.
 - Remove a selected book.
 
+![screenshot](./Captura.PNG)
+
 
 ## Built With
 
@@ -53,4 +55,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](LICENSE) licensed.
+This project is [MIT](./MIT.md) licensed.
