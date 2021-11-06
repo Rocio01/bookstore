@@ -233,6 +233,7 @@ a {
   margin-left: 6.25rem;
   width: 75rem;
   padding: 0;
+  margin-bottom: 0% !important;
 }
 
 .btn-add-book {
@@ -272,7 +273,7 @@ a {
 }
 
 #root {
-  width: 87.5rem;
+  width: fit-content;
   height: 68.563rem;
   background-color: #f5f6fa;
 }
