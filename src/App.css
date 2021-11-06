@@ -152,6 +152,7 @@ li {
   border: solid 1px var(--white);
   background-color: #fff;
 }
+
 .progress-ul {
   padding-left: 1% !important;
 }
@@ -244,7 +245,7 @@ a {
   width: 6.688rem;
   height: 1.188rem;
   margin: 0.25rem 0 0;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, "Times New Roman", Times, serif;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
@@ -260,6 +261,7 @@ a {
   padding: 9.313rem 3.75rem 7.688rem 6.25rem;
   background-color: #f5f6fa;
 }
+
 .App {
   background-color: #fafafa;
   height: 68.563rem;
@@ -290,7 +292,7 @@ a {
   border-radius: 4px;
   border: solid 1px var(--white);
   background-color: #fff;
-  font-family: Montserrat;
+  font-family: Montserrat, "Times New Roman", Times, serif;
   font-size: 1rem;
   font-weight: normal;
   font-stretch: normal;
